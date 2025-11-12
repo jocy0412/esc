@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESC Beans List</title>
+  <style>
+    :root{
+      --macadamia: #EADBC8;
+      --cherry-cordial: #F3C0C9;
+      --rose-peach: #F7D0B3;
+      --sapphire-grape: #D6D4FF;
+      --strawberry-brownie: #E9B1A8;
+      --beige-bg: #F3EDE4;
+      --text-strong: #111827;
+      --esc-blue: #3666A3;
+      --xiaohongshu-red: #FF2442;
+      --bg: #f8fafc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;}
+    body{
+      font-family: system-ui,-apple-system,"PingFang SC","Noto Sans SC",sans-serif;
+      color:var(--text-strong);
+      background:var(--beige-bg);
+      display:flex;align-items:center;justify-content:center;
+    }
+    .wrap{
+      width:100%;
+      height:100%;
+      max-width:900px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+    header{text-align:center;margin-bottom:30px;}
+    h1{font-size:32px;}
+    .range-note{font-size:22px;font-weight:700;color:#222;background:#fff5d7;padding:6px 14px;border-radius:999px;margin-top:20px;margin-bottom:10px;}
+    .grid{flex:1;width:100%;}
+    .card{
+      border-radius:10px;
+      padding:18px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      box-shadow:inset 2px 2px 6px rgba(255,255,255,0.9),inset -2px -2px 6px rgba(0,0,0,0.08),0 3px 6px rgba(0,0,0,0.1);
+      margin-bottom:12px;
+      min-height:110px;
+    }
+    .bean{font-weight:700;font-size:20px;}
+    .flavor{font-size:19px;margin-top:6px;}
+    .text-group{display:flex;flex-direction:column;justify-content:center;}
+    .price-group{display:flex;flex-direction:column;justify-content:center;align-items:flex-end;gap:8px;}
+    .pill{font-size:17px;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.9);border:1px solid rgba(17,24,39,.2);font-weight:600;}
+    .macadamia{background:var(--macadamia)}
+    .cherry-cordial{background:var(--cherry-cordial)}
+    .rose-peach{background:var(--rose-peach)}
+    .sapphire-grape{background:var(--sapphire-grape)}
+    .strawberry-brownie{background:var(--strawberry-brownie)}
+    footer{
+      margin-top:20px;
+      text-align:center;
+    }
+    footer .sns{
+      font-size:20px;
+      font-weight:600;
+      margin-bottom:6px;
+    }
+    footer .sns strong:first-child{color:var(--xiaohongshu-red);}
+    footer .sns span.label-xhs{color:var(--xiaohongshu-red);font-weight:700;}
+    footer .sns span.label-ig{color:var(--esc-blue);font-weight:700;}
+    footer .copy{font-size:16px;font-weight:700;color:#444;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>ESC Beans List</h1>
+      <div class="range-note">☕ 饮品每杯 25元 ～ 35元 ／ 咖啡豆每100g 75元 ～ 95元</div>
+    </header>
+    <main class="grid">
+      <div class="card macadamia">
+        <div class="text-group">
+          <div class="bean">Yemen Mocha Matari Selection Natural</div>
+          <div class="flavor">Mocha, Macadamia</div>
+        </div>
+        <div class="price-group">
+          <span class="pill">1杯 25元</span>
+          <span class="pill">100g 75元</span>
+        </div>
+      </div>
+      <div class="card cherry-cordial">
+        <div class="text-group">
+          <div class="bean">Colombia Anaya Red Bourbon Washed</div>
+          <div class="flavor">Cherry, Cordial</div>
+        </div>
+        <div class="price-group">
+          <span class="pill">1杯 25元</span>
+          <span class="pill">100g 80元</span>
+        </div>
+      </div>
+      <div class="card rose-peach">
+        <div class="text-group">
+          <div class="bean">Colombia Pinca Anaya Ombligon Washed</div>
+          <div class="flavor">Rose, Peach</div>
+        </div>
+        <div class="price-group">
+          <span class="pill">1杯 25元</span>
+          <span class="pill">100g 80元</span>
+        </div>
+      </div>
+      <div class="card strawberry-brownie">
+        <div class="text-group">
+          <div class="bean">Colombia El Encanto Caturra Chiroso Natural</div>
+          <div class="flavor">Strawberry, Brownie</div>
+        </div>
+        <div class="price-group">
+          <span class="pill">1杯 30元</span>
+          <span class="pill">100g 85元</span>
+        </div>
+      </div>
+      <div class="card sapphire-grape">
+        <div class="text-group">
+          <div class="bean">Colombia El Encanto Geisha Washed</div>
+          <div class="flavor">Sapphire Grape</div>
+        </div>
+        <div class="price-group">
+          <span class="pill">1杯 35元</span>
+          <span class="pill">100g 95元</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="sns"><span class="label-xhs">📍 小红书:</span> <strong>esc_coffee</strong> ｜ <span class="label-ig">Instagram:</span> <strong>esc_coffee_official</strong></p>
+      <p class="copy">© ESC Coffee</p>
+    </footer>
+  </div>
+</body>
+</html>
